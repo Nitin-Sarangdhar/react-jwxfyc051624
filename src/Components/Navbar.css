@@ -1,0 +1,49 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: blue;  
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Menu options styling */
+.navbar-options {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu item styling */
+.navbar-options li {
+  margin-left: 20px;
+}
+
+/* Link styling */
+.navbar-option {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.navbar-option:hover {
+  color: #ddd;
+}
+
+/* Additional styling to ensure content below the navbar is not hidden */
+body {
+  margin-top: 60px; /* Adjust this value if your navbar height changes */
+}
